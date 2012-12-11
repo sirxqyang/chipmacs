@@ -7,7 +7,7 @@
 ## 3rd, intersectBed
 ## 4th, get the treat.bw file with bedGraphToBigWig,
 ## 5th, get the Wig file with bigWigToWig.
-
+## finally, send me the comfirming email.
 
 for i in $@
 do
@@ -75,9 +75,26 @@ do
 	echo $step5 >> command.txt
 
 
-	## backto to the former directory
+	## back to the former directory
 	##-----------------------------------
 
 	cd ..
 
 done
+
+
+## finally, send the confirming email to myself
+##----------------------------------------------
+/usr/sbin/sendmail -t <<EOF
+From: Mail testing <xiaoqinyang@yeah.net>                                                                                      
+To: sirxqyang@gmail.com
+Subject: MACS done!                                                  
+----------------------------------
+Sweet heart,
+
+Misson accomplished.
+
+me
+---------------------------------
+EOF
+man sendmail
