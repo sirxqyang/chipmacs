@@ -1,0 +1,19 @@
+==========================
+README for chipmacs (1.1)
+==========================
+
+<12-11-2012 Xiaoqin Yang>
+
+
+Introduction
+=============
+
+Many chip-seq analysis should be done and I'm tired of typing commands. Here comes the automatical script. Suppose you have several ChIP-seq file in different folders, named by dcid.
+
+
+Usage
+=========
+The only thing you should do is just type the following command in your terminal:
+
+
+nohup chipmacs.sh 7112 7113 &
